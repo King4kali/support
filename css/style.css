@@ -1,32 +1,29 @@
-/* Reset and general styles */
+/* Reset default styles */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Ensure padding and border don't add to element's width */
+    box-sizing: border-box;
 }
 
-/* Default body styles */
+/* Body styles */
 body {
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    overflow: hidden;
 }
 
-/* Styles for headings */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-/* Styles for buttons */
+/* Buttons */
 button {
     background: unset;
     border: none;
 }
 
-/* Header section styles */
+/* Header section */
 .head {
     background-image: url('../img/OIP.jpg');
     height: 100vh;
@@ -36,7 +33,7 @@ button {
     position: relative;
 }
 
-/* Main heading styles */
+/* Main heading */
 .h1 {
     width: 90%;
     margin: 0 auto;
@@ -51,23 +48,22 @@ button {
     margin-left: 20px;
 }
 
-/* Buttons container styles */
+/* Buttons section */
 .buttons {
     position: absolute;
     width: 100%;
     bottom: 5%;
 }
 
-/* Send me container styles */
+/* Send me div */
 .send_me_div {
-    position: relative;
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-/* Slider styles */
+/* Header slide */
 .header_slide {
     width: 100%;
     position: absolute;
@@ -79,7 +75,7 @@ button {
     height: 70vh;
 }
 
-/* Send me button styles */
+/* Send me button */
 .send_me {
     width: 45%;
     border-radius: 50px;
@@ -94,7 +90,6 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    max-width: 200px;
 }
 
 .send_me img {
@@ -102,7 +97,7 @@ button {
     max-width: 300px;
 }
 
-/* Modal styles */
+/* Sender form */
 .sender {
     padding: 50px;
     position: fixed;
@@ -125,7 +120,7 @@ button {
     visibility: visible;
 }
 
-/* QR code styles */
+/* QR code */
 .qr-code {
     width: 50%;
     margin: 0 auto;
@@ -137,7 +132,7 @@ button {
     height: auto;
 }
 
-/* Crypto wallet text styles */
+/* Crypto wallet text */
 .crypto_wallet_txt {
     text-align: center;
     font-size: 20px;
@@ -148,7 +143,7 @@ button {
     word-wrap: break-word;
 }
 
-/* Memo styles */
+/* Memo section */
 .memo {
     margin: 0 auto;
     margin-top: 5%;
@@ -160,19 +155,19 @@ button {
     text-align: center;
 }
 
-/* Info heading styles */
+/* Info heading */
 .info_h3 {
     text-align: center;
     font-size: 30px;
 }
 
-/* P1 styles */
+/* Paragraph */
 .p1 {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Copy button styles */
+/* Copy button */
 .copy_btn {
     width: 100%;
     padding: 20px 30px;
@@ -183,7 +178,7 @@ button {
     margin-top: 5%;
 }
 
-/* Crypto wallet network styles */
+/* Crypto wallet network */
 .crypto_wallet_net {
     text-align: center;
     margin: 0 auto;
@@ -194,7 +189,7 @@ button {
     border-radius: 5px;
 }
 
-/* Close button styles */
+/* Close button */
 .close_btn {
     position: absolute;
     top: 5%;
@@ -209,83 +204,39 @@ button {
 .close_btn:hover {
     color: #000;
 }
-@media only screen and (max-width: 1020px) {
+
+/* Hide element */
+.d-none {
+    display: none;
+}
+
+/* Responsive media queries */
+@media (max-width: 1000px) {
     .h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
         padding-top: 5%;
     }
-    .h1 img {
-        width: 35px;
-        margin-left: 10px;
+    .header_slide img {
+        height: 65vh;
     }
 }
-@media only screen and (max-width: 900px) {
+
+@media (max-width: 700px) {
     .h1 {
-        font-size: 2.5rem;
-        padding-top: 5%;
+        padding-top: 15%;
+        font-size: 32px;
     }
     .h1 img {
-        width: 35px;
-        margin-left: 10px;
+        width: 50px;
+        margin-left: 5px;
     }
 }
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
-
-    /* Main heading */
+@media (max-width: 400px) {
     .h1 {
-        font-size: 2.5rem;
-        padding-top: 5%;
-    }
-
-    .h1 img {
-        width: 25px;
-        margin-left: 10px;
-    }
-
-    /* Buttons container */
-    .buttons {
-        bottom: 10%;
-    }
-
-    /* Send me button */
-    .send_me {
-        width: 80%;
-        font-size: 1.5rem;
-        padding: 15px 20px;
-        
-    }
-
-    .send_me img {
-        width: 20px;
-    }
-
-    /* Modal */
-    .sender {
-        width: 90%;
-        padding: 30px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 100%;
-        max-height: 90vh;
-    }
-
-    /* Close button */
-    .close_btn {
-        top: 2%;
-        right: 2%;
-        font-size: 1.5rem;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .h1 {
-        font-size: 1.5rem;
-        padding-top: 10%;
+        font-size: 40px;
     }
     .h1 img {
-        width: 35px;
-        margin-left: 10px;
+        width: 50px;
+        margin-left: 5px;
     }
 }
