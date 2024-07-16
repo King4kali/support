@@ -1,0 +1,291 @@
+/* Reset and general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and border don't add to element's width */
+}
+
+/* Default body styles */
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Styles for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Styles for buttons */
+button {
+    background: unset;
+    border: none;
+}
+
+/* Header section styles */
+.head {
+    background-image: url('../img/OIP.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Main heading styles */
+.h1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    padding-top: 5%;
+}
+
+.h1 img {
+    width: 70px;
+    margin-left: 20px;
+}
+
+/* Buttons container styles */
+.buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+}
+
+/* Send me container styles */
+.send_me_div {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Slider styles */
+.header_slide {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.header_slide img {
+    width: 100%;
+    height: 70vh;
+}
+
+/* Send me button styles */
+.send_me {
+    width: 45%;
+    border-radius: 50px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 25px 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 200px;
+}
+
+.send_me img {
+    width: 25px;
+    max-width: 300px;
+}
+
+/* Modal styles */
+.sender {
+    padding: 50px;
+    position: fixed;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    max-height: 900px;
+    background: #ffffff;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.sender.d-block {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* QR code styles */
+.qr-code {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.qr-code svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Crypto wallet text styles */
+.crypto_wallet_txt {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0%;
+    word-wrap: break-word;
+}
+
+/* Memo styles */
+.memo {
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 90%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Info heading styles */
+.info_h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* P1 styles */
+.p1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Copy button styles */
+.copy_btn {
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+}
+
+/* Crypto wallet network styles */
+.crypto_wallet_net {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Close button styles */
+.close_btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.close_btn:hover {
+    color: #000;
+}
+@media only screen and (max-width: 1020px) {
+    .h1 {
+        font-size: 2.5rem;
+        padding-top: 5%;
+    }
+    .h1 img {
+        width: 35px;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .h1 {
+        font-size: 2.5rem;
+        padding-top: 5%;
+    }
+    .h1 img {
+        width: 35px;
+        margin-left: 10px;
+    }
+}
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Main heading */
+    .h1 {
+        font-size: 2.5rem;
+        padding-top: 5%;
+    }
+
+    .h1 img {
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    /* Buttons container */
+    .buttons {
+        bottom: 10%;
+    }
+
+    /* Send me button */
+    .send_me {
+        width: 80%;
+        font-size: 1.5rem;
+        padding: 15px 20px;
+        
+    }
+
+    .send_me img {
+        width: 20px;
+    }
+
+    /* Modal */
+    .sender {
+        width: 90%;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 90vh;
+    }
+
+    /* Close button */
+    .close_btn {
+        top: 2%;
+        right: 2%;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .h1 {
+        font-size: 1.5rem;
+        padding-top: 10%;
+    }
+    .h1 img {
+        width: 35px;
+        margin-left: 10px;
+    }
+}
